@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/flipkart/favicon.png" type="image/png">
+
+    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery,...</title>
+
+    <script src="https://kit.fontawesome.com/8943eeb0c1.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<style>
+
+body { background-color:#F5F5F5; }
+
+.d-flex { width: 40%; }
+
+.dropdown {
+      position: relative;
+      display: inline-block;
+}
+
+.dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 270px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+}
+
+
+.dropdown-menu a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-menu {display: block;}
+.dropdown:hover .btn {background-color: #2A55E5; color: white; }
+.dropdown:hover .fa-angle-down {transition: transform 0.3s ease;} 
+.dropdown:hover .fa-angle-down:hover {transform: rotate(180deg);}
+
+
+.section-image {
+      width: 55px;
+      height: 55px;
+      object-fit: cover;
+      margin: 00px 00px 00px 00px;
+    }
+
+ .nav-item {
+      margin-right: 20px; /* Right margin */
+      margin-left: 20px; /* Left margin */
+    }
+
+  .navbar-brand { 
+      margin-left: 15px; margin-right: 37px;}
+
+  .d-flex { 
+      margin-right: 20px;  }
+
+  .container { 
+      background-color:white; }
+
+  .form-control { 
+      background-color:#F0F5FF }
+
+
+  #electronics { background-color:white; }
+
+
+  @media (max-width: 767px) {
+
+  .carousel-inner .carousel-item > div {display: none;}
+
+  .carousel-inner .carousel-item > div:first-child {display: block;}
+  
+  }
+
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+      display: flex;
+  }
+
+  /* medium and up screens */
+  @media (min-width: 768px) {
+
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+  }
+
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+  }
+
+
+
+
+
+  .card { margin:8px; } 
+  .container h4 { text-align:left; }
+  .bottom { line-height: 16px; font-size: 14px; color: #878787; font-family: calibri;}
+
+  h6 { color:#878787 }
+
+
+
+
+  </style>
+  <link rel="stylesheet" href="flipkart.css">
+  </head>
+
+  <body>
+    <!-------------- NAVBAR --------------->
+
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="images/flipkart/flipkartlogo.svg"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!---- SEARCH BOX ------>
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search for Products, Brands and More">
+    </form>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+    <!---- Login ------>
+    
+    <div class="dropdown">
+    <a class="btn" href="#" role="button" data-bs-toggle="dropdown">
+    <img src="images/flipkart/flipicon.svg">
+    Login <i class="fas fa-angle-down"></i></a>
+    
+    <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">New customer</a></li>
+    <li><a class="dropdown-item" href="#">My Profile</a></li>
+    <li><a class="dropdown-item" href="#">Flipkart Plus Zone</a></li>
+    <li><a class="dropdown-item" href="#">Orders</a></li>
+    <li><a class="dropdown-item" href="#">Wishlist</a></li>
+    <li><a class="dropdown-item" href="#">Rewards</a></li>
+    <li><a class="dropdown-item" href="#">Gift Cards</a></li>
+    </ul>
+    </div>
+        
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><img src="images/flipkart/flipcart.svg"> Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><img src="images/flipkart/flipbecomeaseller.svg">Become a Seller</a>
+        </li>
+        
+    <div class="dropdown_1">
+    <a class="btn" href="#" role="button" data-bs-toggle="dropdown">
+    <img src="images/flipkart/flipthreedots.svg"></a>
+    
+    <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="#">Notification Preferences</a></li>
+    <li><a class="dropdown-item" href="#">24x7 Customer Care</a></li>
+    <li><a class="dropdown-item" href="#">Advertise</a></li>
+    <li><a class="dropdown-item" href="#">Download App</a></li>
+    </ul>
+    </div>
+
+        
+      </ul>
+      
+    </div>
+  </div>
+
+
+</nav>
+
+<div class="container mt-2 py-4">
+  <div class="row">
+    <div class="col">
+      <img src="images/flipkart/grocery.webp" alt="Grocery" class="section-image">
+      <div>Grocery</div>
+    </div>
+    <div class="col">
+      <img src="images/flipkart/mobile.webp" alt="Mobiles" class="section-image">
+      <div>Mobiles</div>
+    </div>
+    <div class="col">
+      <img src="images/flipkart/fashion.webp" alt="Fashion" class="section-image">
+      <div>Fashion</div>
+    </div>
+    <div class="col">
+      <img src="images/flipkart/electronics.webp" alt="Electronics" class="section-image">
+      <div>Electronics</div>
+    </div>
+    <div class="col">
+      <img src="images/flipkart/furniture.webp" alt="Home & Furniture" class="section-image">
+      <div>Home & Furniture</div>
+    </div>
+    <div class="col">
+      <img src="images/flipkart/appliances.webp" alt="Appliances" class="section-image">
+      <div>Appliances</div>
+    </div>
+    <div class="col">
+      <img src="images/flipkart/travel.webp" alt="Travel" class="section-image">
+      <div>Travel</div>
+    </div>
+    <div class="col">
+      <img src="images/flipkart/toys.webp" alt="Beauty" class="section-image">
+      <div>Beauty, Toys & More</div>
+    </div>
+    
+    <div class="col">
+      <img src="images/flipkart/twowheelers.webp" alt="Two Wheelers" class="section-image">
+      <div>Two Wheelers</div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators" style="list-style: none;">
+                    <li data-bs-target="#mycarousel" data-bs-slide-to="0"></li>
+                    <li data-bs-target="#mycarousel" data-bs-slide-to="1" class="active"></li>
+                <li data-bs-target="#mycarousel" data-bs-slide-to="2"></li>
+                <li data-bs-target="#mycarousel" data-bs-slide-to="3"></li>
+                <li data-bs-target="#mycarousel" data-bs-slide-to="4"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="images/flipkart/epsonprinter.webp" class="d-block w-100" style="height: 180px;">
+                </div>
+
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="images/flipkart/mobile2.webp" class="d-block w-100" style="height:180px;">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/flipkart/plane.webp" class="d-block w-100" style="height:180px;">  
+                </div>
+
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="images/flipkart/zebrotv.webp" class="d-block w-100" style="height:180px;">
+                </div>
+
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="images/flipkart/zebroproject.webp" class="d-block w-100" style="height:180px;">
+                </div>
+                </div>
+
+                <a href="#mycarousel" class="carousel-control-prev" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+
+                <a href="#mycarousel" class="carousel-control-next" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container text-center my-3 pt-4" id="electronics">
+    <div class="row mx-auto my-auto justify-content-center">
+      <div id="recipeCarousel" class="carousel carousel_1 slide">
+        <h4>Best of Electronics</h4>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item carousel-item_1 active">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/flipkart/carousela1.webp" height="200px;">
+                </div>
+                <!--<div class="card-img-overlay"></div>-->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/flipkart/carousela2.webp" height="200px;">
+                </div>
+                <!--<div class="card-img-overlay"></div>-->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/flipkart/carousela3.webp" height="200px;">
+                </div>
+                <!--<div class="card-img-overlay"></div>-->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/flipkart/carousela4.webp" height="200px;">
+                </div>
+                <!--<div class="card-img-overlay"></div>-->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/flipkart/carousela5.webp" height="200px;">
+                </div>
+                <!--<div class="card-img-overlay"></div>-->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/flipkart/carousela6.webp" height="200px;">
+                </div>
+                <!--<div class="card-img-overlay"></div>-->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/flipkart/carousela7.webp" height="200px;">
+                </div>
+                <!--<div class="card-img-overlay"></div>-->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/flipkart/carousela8.webp" height="200px;">
+                </div>
+                <!--<div class="card-img-overlay"></div>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>    
+  </div>
+
+  <div class="container text-center my-3 pt-4">
+    <div class="row mx-auto my-auto justify-content-center">
+      <div id="recipeCarousel_1" class="carousel carousel_1 slide">
+        <h4>Beauty, Food, Toys & more</h4>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item carousel-item_1 active">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/flipkart/carouselb1.webp" height="200px;">
+                </div>
+                <!--<div class="card-img-overlay"></div>-->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/flipkart/carouselb2.webp" height="200px;">
+                </div>
+                <!--<div class="card-img-overlay"></div>-->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/flipkart/carouselb3.webp" height="200px;">
+                </div>
+                <!--<div class="card-img-overlay"></div>-->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/flipkart/carouselb4.webp" height="200px;">
+                </div>
+                <!--<div class="card-img-overlay"></div>-->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/flipkart/carouselb5.webp" height="200px;">
+                </div>
+                <!--<div class="card-img-overlay"></div>-->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/flipkart/carouselb6.webp" height="200px;">
+                </div>
+                <!--<div class="card-img-overlay"></div>-->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/flipkart/carouselb7.webp" height="200px;">
+                </div>
+                <!--<div class="card-img-overlay"></div>-->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/flipkart/carouselb8.webp" height="200px;">
+                </div>
+                <!--<div class="card-img-overlay"></div>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel_1" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel_1" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>    
+  </div>
+
+  <div class="container-fluid px-3 pt-5" id="bottom" >
+<h6>Top Stories: Brand Directory</h6><br>
+
+<p class="bottom">MOST SEARCHED FOR ON FLIPKART: valentines day gifts | valentines gifts for her valentines gifts for him / valentines gifts for boyfriend | valentines gifts for girlfriend Fresh Flower Delivery | IPhone 15 iPhone 15 Plus | iPhone 15 Pro | iPhone 15 Pro Max Vivo x 100 | Spoyl Store | SAMSUNG FlipS | SAMSUNG Folds | Flipkart Axis Bank Super Elite Credit card | SG Mobile Phones | Primebook Laptops | Moto Edge 40 Grievance Redressal | OPPO Reno7 Pro SG | iPhone 13 Help Centre Track Orders Manage Orders | Return Orders | Gift Cards Store | Flipkart Axis Bank Credit Card | Pay Later<br><br>
+
+MOBILES Samsung Galaxy S24 5G | Samsung Galaxy S24+5G | IPhone 12 64GB | IPhone 12 Pro 512GB | IPhone 12 128GB | Vivo Y15 | SAMSUNG Galaxy S21 FE 5G Infinix HOT 301 | Realme 10 Pro 50 | MOTOROLA G62 5G | Nothing Phorie REDMI Note 12 Pro 5G | Infinix SMART 7 | Vivo Y12 | Oppo Α12 | Motorola 5g Phone | Realme 5g Smartphone Apple 5g Phone | Iqoo 5g Phones Oneplus 5g Phones | Viva 5g Priones Oppo 5g Smart Phones | Oppo F15 | Oppo A31 | Samsung A71 | Samsung A51 Samsung A31 (Phone 11 | iPhone 11 Pro 4G Mobile | Nokia Mobile | Samsung Mobile iphone Oppo Mobile Vivo Mobile<br><br>
+
+
+CAMERA GoPro Action Camera | Nikon Camera Canon Camera Sony Camera | Canon DSLR | Nikon DSLR<br><br>
+
+LAPTOPS Asus ROG Ally | MacBook Pro M2 | Premium Laptop ASUS ROG Strix SCAR 16 (2023) Core 19 13th Gen | ASUS ROG Zephyrus M16 (2023) Core 19 13th Gen | ASUS Zenbook 14 OLED (2022) | Reaime Book Prime Core i5 11th Gen | Microsoft Surface Go Pentium 128GB | Apple Laptops | Acer Laptops | Lenovo Laptops | Dell Laptops | Asus Laptops HP Laptops | Gaming Laptops | 2 in 1 Laptops Laptops Dell latest laptops 2022 HP latest laptops 2022 | Infinix INBook Y1 Plus | SAMSUNG Galaxy Book3| 12th Gen Intel Core Laptops<br><br>
+
+TVS Nokia TV | Panasonic TV | Thomson TV | MIX Pro | Realme TV | Motorola TV | OnePlus TVS LG TV | TV | Sony TV | Samsung TV | Android Television | Iffalcon Tv | Mi TV<br><br>
+
+LARGE APPLIANCES:
+
+Television Washing Machines | Refrigerators | Air Conditioners | Electric Cookers | Electric Jug (Heater) / Travel Ketties | Induction Cooktops | Inverters/stabilizer Irons/tron Box | Mixer Grinder Juicer Wet Grinders Chimneys | Microwave Ovens Vacuum Cleaners | Water Purifier | Fan<br><br>
+
+CLOTHING Green bridal lehenga | Tops | Shoes | Sunglasses | Bridal Blouse | Half saree blouse designs | Designer blouses | Blouse designs Shirts | Cotton saree blouse Tshirts Jeans | Sarees | Dresses | One pieces | Groom wedding sherwani | Designer Salwar Suits | Bra | Cotton simple blouse designs | Banarasi saree blouse designs | Stylish blouse astin design Track designs Pant Blouse neck designs | Men Kurtas | Party Dresses | Palazzo Suits | Anarkali | Gowns | Cut out dress Salwar Suits | Kurtis | Designer Sarees Leggings | Shorts | Georgette Sarees | Ethnic Wear uppada pattu sarees Blouse back design | Jodhpur pants<br><br>
+
+FOOTWEAR: Adidas Shoes | Reebok Shoes | Nike Shoes Puma Shoes | Boots Bata Shoes Woodland Shoes | Skechers Shoes Sneakers | Womens Boots Sports Shoes | Loafers | Sandals | Lotto Sports Shoes Casual Shoes | Womens chers Shoes Asics Sports Shoes | Formal Shoes | School shoes <br><br>
+
+GROCERIES: Phonepe Grocery Voucher | Hand Wash | Soap | Cashue Nuts | Sunflower Oil | Eggs | Toilet Cleaner | Harpic Toilet Cleaner | Dettol Soap | Mustard Oil | Biscuits | Cheese | Patanjali Atta | Fortune Oil | Aashirvaad Atta | Tea <br><br>
+
+BEST SELLING ON FLIPKART Headphones | Best Gas Geyser | Klichen Geyser | Nuti Blenders | Puttate Arbeit Air Com S Food Chocolates Cycles Caculators Lipsticks Mask Verti UPS Fastrack Watches Wallets any de FURNITURE saire Botas Bens Dieng sats Wariobes Mattresses TV Units Tables Cases Ch Sets Brown Sofa<br><br><br></p>
+
+
+<h6>Flipkart: The One-stop Shopping Destination</h6>
+
+<p class="bottom">E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Filipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACS, mixer grinder Juicers and other time-saving kitchen and small appliances; from home furnishings like cushlan covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.<br><br>
+
+What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question.<br><br></p>
+
+<h6>Flipkart Plus</h6>
+
+<p class="bottom">A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member In short, earn more when you shop more!<br><br>
+
+What's more, you can even use the Flipkart supercoins for a number of exciting services, like:<br>
+
+An annual Zomato Gold membership<br>
+
+An annual Hotstar Premium membership<br>
+
+6 months Gaana plus subscription<br>
+
+Rupees 550 instant discount on flights on ixiga<br> 
+Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.</p><br>
+
+  
+<h6>No Cost EMI</h6>
+
+<p class="bottom">In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</p>
+
+<h6>EMI on Debit Cards</h6>
+
+<p class="bottom">Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart Introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply.</p>
+
+<h6>Mobile Exchange Offers</h6>
+
+<p class="bottom">Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply.</p>
+
+<h6>What Can You Buy From Flipkart?
+
+Mobile Phones</h6>
+
+<p class="bottom">From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials, Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails you to a number of post- purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements the Flipkart Complete Mobile Protection covers a comprehensive range of post-purchase problems, with door-to-door services.</p>
+
+<h6>Electronic Devices and Accessories</h6>
+
+<p class="bottom">When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All you students out there, confused about what laptop to get? Our Back To College Store segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience that is quicker and simpler.
+
+Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store.
+
+Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember.
+
+How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile accessories starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal travel companions for you and your phone; never again worry about running out of charge or memory on your next vacation.</p>
+
+<h6>Large Appliances</h6>
+
+<p class="bottom">Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover everything you need to run a house under one roof. Our Dependable TV and Appliance Store ensures zero transit damage, with a replacement guarantee if anything goes wrong; delivery and installation as per your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty) - rest assured, value for money is what is promised and delivered. Shop from market leaders in the country like Samsung, LG, Whirlpool, Midea Mi, Vu, Panasonic, Godrej Sony, Daikin, and Hitachi among many others.<br>
+For certain product categories, Customers meeting the eligibility criteria will have the option to buy larger quantities. To know more on the eligibility criteria and terms and conditions, please reach out to Purchases.oni@flipkart.com.</p>
+
+<h6>Small Home Appliances</h6>
+
+<p class="bottom">Find handy and practical home appliances designed to make your life simpler: electric kettles, OTGs, microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other time-saving appliances that are truly crafted for a quicker lifestyle. Live life king size with these appliances at home.</p>
+
+<h6>Lifestyle</h6>
+
+<p class="bottom">Flipkart, "India ka Fashion Capital, is your one-stop fashion destination for anything and everything you need to look good. Our exhaustive range of Western and Indlan wear, summer and winter clothing, formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and accessories are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of other tap-of-the- ladder names: From summer staple maxi dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for carefully curated designs that are the talk of the tovers Get ready to be spoiled for choice Festivals, office get-togethers, weddings, brunches, or nightwear-Flipkart will have your back each time.</p>
+
+<h6>Home and Furniture</h6>
+
+<p class="bottom">Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets, dining tables, wardrobes, and TV units-it's not easy to set up everything again. With the hundreds of options thrown at you, the ride could be overwhelming. What place is reliable, what furniture will stand the test of time? These are questions you must ask before you choose a store. Well, our Durability Certified Furniture Store has not only curated a range of furniture keeping in mind the modern Indian consumer but furniture that comes with a lab certification, ensuring they last you for up to 10 years. Yes, all our furniture has gone through 35 stability and load tests so that you receive only the best-quality furniture. Be FurniSure, always. Names to look out for are Nilkamal, Godrej Interio, Urban Ladder, Home Town, Durian and Perfect Homes.<br>
+
+You may have your furniture all set up, but they could end up looking flat and incomplete without complementary decor. Curtains, cushion covers, bed sheets, wall shelves, paintings, floor lamps find everything that turns a house to an inviting home under one roof at Flipkart.</p>
+
+<h6>Baby and Kids</h6>
+
+<p class="bottom">Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're an expecting mother or a new mother, you will find everything you need to set sail on a smooth parenting journey with the help of our baby care collection. When it comes to safety, hygiene and comfort, you can rely on us without a second thought Huggies Pampers, MamyPoko, and Johnson & Johnson: we host only the most-trusted names in the business for your baby.</p>
+
+<h6>Books, Sports and Games</h6>
+
+<p class="bottom">Work hard and no play? We don't believe in that. Get accous to best-selling fiction and non-fiction books by your favourite authors, thrilling English and indian blockbusters, most-wanted gaming consoles, and a tempting range of fitness and sports gadgets and equipment bound to inspire you to get moving.</p>
+
+<h6>Grocery/Supermart</h6>
+
+<p class="bottom">Launching into the grocery vertical, Flipkart introduces Supermart, that is out to bring everyday essentials cicol to you. From spices, dairy, personal and sanitary cane, breakfast essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to present everything you need to run a house. Now buy Grocery products for as low as 1 Rupee Store presents new products every day for a nomimal price of 1 Rupee only. Terms and conditions apply.</p>
+
+<p class="bottom">Launching into the grocery vertical, Flipkart introduces Supermart, that is out to bring everyday essentials cicol to you. From spices, dairy, personal and sanitary cane, breakfast essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to present everything you need to run a house. Now buy Grocery products for as low as 1 Rupee Store presents new products every day for a nomimal price of 1 Rupee only. Terms and conditions apply.</p>
+</div>
+
+<div class="container-fluid px-3 pt-3" id="footer">
+  
+</div>
+
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      let items = document.querySelectorAll('.carousel_1 .carousel-item_1')
+
+    items.forEach((el) => {
+      const minPerSlide = 4
+      let next = el.nextElementSibling
+      for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+            next = items[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})</script>
+
+
+
+ <script type="text/javascript">
+  let items1 = document.querySelectorAll('.carousel_2 .carousel-item_2')
+
+    items1.forEach((el) => {
+      const minPerSlide = 4
+      let next1 = el.nextElementSibling
+      for (var i=1; i<minPerSlide; i++) {
+        if (!next1) {
+            // wrap carousel by using first child
+            next1 = items1[0]
+        }
+        let cloneChild = next1.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next1 = next1.nextElementSibling
+    }
+})</script>
+
+
+
+  </body>
+</html>
